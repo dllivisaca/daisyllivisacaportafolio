@@ -43,10 +43,16 @@ body {
     margin-bottom: 20px;
 }
 
+.info-line {
+    display: flex;
+    align-items: center;
+    gap: 35px; /* Espacio entre los elementos */
+}
+
 .subtitle {
+    margin: 0;
     font-size: 1rem;
     color: #777;
-    margin-bottom: 30px;
 }
 
 .contact-link {
