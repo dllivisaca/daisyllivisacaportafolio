@@ -26,8 +26,8 @@ body {
     padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
 }
 
 .portfolio-title {
@@ -44,22 +44,22 @@ body {
     width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
-
 .name {
     font-size: 4.5rem;
     color: #333;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .info-line {
-    display: flex; /* Organiza los elementos en fila */
-    align-items: center; /* Alinea verticalmente al centro */
-    justify-content: flex-start; /* Alinea al inicio */
-    gap: 10px; /* Ajusta el espacio entre los elementos */
-    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    display: flex; /* Asegura que los elementos estén en línea */
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    gap: 10px; /* Espaciado inicial entre los elementos */
+    width: 90%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    position: relative; /* Permite ajustar posiciones específicas */
+    margin-top: 20px;
 }
-
-
 
 .subtitle {
     margin: 0;
@@ -73,16 +73,14 @@ body {
     font-weight: bold;
     font-size: 1rem;
     border-bottom: 2px solid #007BFF;
-    margin-left: 20px; /* Ajusta este valor para alinearlo con precisión */
+    margin-left: auto; /* Empuja el enlace al final del contenedor */
     transition: color 0.3s ease, border-color 0.3s ease;
 }
-
 
 .contact-link:hover {
     color: #0056b3;
     border-color: #0056b3;
 }
-
 
 /* Right section styles */
 .right-section {
