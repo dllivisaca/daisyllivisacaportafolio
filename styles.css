@@ -12,14 +12,14 @@ body {
 /* Container styles */
 .container {
     display: flex;
-    width: 100%; /* Ocupa todo el ancho */
-    max-width: 1200px; /* Limita el ancho para un diseño centrado */
-    min-height: 500px; /* Ajusta el alto mínimo del contenedor */
-    border-radius: 10px;
+    width: 100%; /* Ahora ocupa todo el ancho de la pantalla */
+    min-height: 500px; /* Ajusta la altura mínima según prefieras */
+    border-radius: 0; /* Elimina bordes redondeados */
     overflow: hidden;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: white; /* Mantiene el diseño limpio */
+    box-shadow: none; /* Elimina la sombra */
+    background-color: white; /* Mantiene el fondo blanco */
 }
+
 
 
 /* Left section */
