@@ -12,12 +12,15 @@ body {
 /* Container styles */
 .container {
     display: flex;
-    max-width: 1200px;
-    background-color: white;
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 1200px; /* Limita el ancho para un diseño centrado */
+    min-height: 500px; /* Ajusta el alto mínimo del contenedor */
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Mantiene el diseño limpio */
 }
+
 
 /* Left section */
 .left-section {
