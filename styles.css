@@ -188,16 +188,17 @@ body {
 
 .bio-content {
     display: flex;
-    align-items: flex-start;
-    gap: 80px; /* Espacio entre imagen y texto */
+    align-items: center; /* Centra verticalmente */
+    gap: 40px; /* Espacio entre la imagen y el texto */
     max-width: 900px;
 }
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    width: auto; /* Ajusta automáticamente el ancho */
+    max-height: 250px; /* Limita la altura máxima */
+    object-fit: cover; /* Ajusta proporciones sin distorsión */
     border-radius: 10px;
+    align-self: center; /* Asegura que no se estire con el texto */
 }
 
 .bio-text {
