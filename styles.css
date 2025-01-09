@@ -189,7 +189,7 @@ body {
 .bio-content {
     display: flex;
     align-items: flex-start;
-    gap: 20px; /* Espacio entre imagen y texto */
+    gap: 80px; /* Espacio entre imagen y texto */
     max-width: 900px;
 }
 
