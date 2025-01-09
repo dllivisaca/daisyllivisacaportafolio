@@ -207,16 +207,17 @@ body {
 
 .bio-content {
     display: flex;
-    align-items: flex-start; /* Alinea la imagen y el texto al principio */
+    align-items: center; /* Alinea la imagen y el texto al principio */
     gap: 80px; /* Ajusta el espacio entre los elementos */
     width: 100%; /* Asegura que ocupa el ancho completo */
     max-width: 900px; /* Controla el ancho máximo */
 }
 
 .profile-picture {
-    width: auto; /* Permite ajuste automático del ancho */
-    max-height: 200px; /* Asegura una altura máxima */
-    object-fit: cover; /* Mantiene proporciones de la imagen */
+    width: auto; /* Ajuste automático del ancho */
+    max-width: 250px; /* Aumenta el ancho máximo */
+    max-height: 300px; /* Aumenta la altura máxima */
+    object-fit: cover; /* Mantiene las proporciones */
     border-radius: 10px; /* Bordes redondeados */
 }
 
@@ -225,6 +226,7 @@ body {
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
+    text-align: justify; /* Justifica el texto */
 }
 
 .highlight {
