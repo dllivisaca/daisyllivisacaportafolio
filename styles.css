@@ -179,6 +179,15 @@ body {
 }
 
 /* Biografía */
+.bio-header {
+    display: flex;
+    align-items: center; /* Centra verticalmente el título y el subtítulo */
+    justify-content: flex-start; /* Alinea todo hacia la izquierda */
+    gap: 100px; /* Espacio entre "Biografía" y el subtítulo */
+    margin-bottom: 20px; /* Añade espacio debajo del título */
+}
+
+
 .bio-header h2 {
     font-size: 2rem;
     color: #333;
@@ -186,19 +195,29 @@ body {
     text-transform: uppercase;
 }
 
+.bio-header .highlight {
+    font-size: 1.2rem; /* Tamaño del subtítulo */
+    font-weight: bold;
+    color: #333;
+    background-color: #fdf4e6; /* Fondo suave */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0; /* Quita márgenes */
+}
+
 .bio-content {
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    gap: 40px; /* Espacio entre la imagen y el texto */
-    max-width: 900px;
+    align-items: flex-start; /* Alinea la imagen y el texto al principio */
+    gap: 80px; /* Ajusta el espacio entre los elementos */
+    width: 100%; /* Asegura que ocupa el ancho completo */
+    max-width: 900px; /* Controla el ancho máximo */
 }
 
 .profile-picture {
-    width: auto; /* Ajusta automáticamente el ancho */
-    max-height: 250px; /* Limita la altura máxima */
-    object-fit: cover; /* Ajusta proporciones sin distorsión */
-    border-radius: 10px;
-    align-self: center; /* Asegura que no se estire con el texto */
+    width: auto; /* Permite ajuste automático del ancho */
+    max-height: 200px; /* Asegura una altura máxima */
+    object-fit: cover; /* Mantiene proporciones de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 .bio-text {
