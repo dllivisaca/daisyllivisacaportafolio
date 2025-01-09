@@ -181,12 +181,15 @@ body {
 /* Biografía */
 .bio-header {
     display: flex;
-    align-items: center; /* Centra verticalmente el título y el subtítulo */
-    justify-content: flex-start; /* Alinea todo hacia la izquierda */
-    gap: 100px; /* Espacio entre "Biografía" y el subtítulo */
-    margin-bottom: 20px; /* Añade espacio debajo del título */
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-start; /* Alinea hacia la izquierda */
+    gap: 20px; /* Espacio entre "BIOGRAFÍA" y el subtítulo */
+    margin-left: 0; /* Asegúrate de que no haya márgenes adicionales */
+    padding-left: 0; /* Elimina el relleno */
+    width: 900px; /* Ancho consistente con el contenido */
+    max-width: 100%;
+    box-sizing: border-box; /* Asegura que ancho y padding no se sumen */
 }
-
 
 .bio-header h2 {
     font-size: 2rem;
