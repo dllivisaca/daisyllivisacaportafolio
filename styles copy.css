@@ -174,12 +174,16 @@ body {
     height: 100vh; /* Ajustar al tamaño de la ventana */
     box-sizing: border-box; /* Incluye el padding dentro de la altura */
     justify-content: start; /* Asegura que el contenido inicie en la parte superior */
-    align-content: center; /* Empuja los elementos hacia abajo si hay espacio */
+    align-content: center; /* Centra todo el contenido */
 }
 
 .bio-header {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Asegura que el contenido esté en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
 }
 
 .bio-sub-header {
