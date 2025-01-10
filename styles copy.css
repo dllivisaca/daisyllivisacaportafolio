@@ -166,9 +166,11 @@ body {
 /*Segunda hoja*/
 .second-page {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 3fr;
     grid-template-rows: auto 3fr;
     row-gap: 40px;
+    padding: 40px 60px;
+    column-gap: 80px;
   }
 
 .bio-header {
@@ -182,6 +184,18 @@ body {
     align-self: center; 
 }
 
+.bio-sub-header .highlight {
+    grid-area: bio-highlight; /* Asigna al área 'bio-highlight' */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #fdf4e6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0;
+    white-space: nowrap; /* Evita que pase a otra línea */
+}
+
 .bio-image {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
@@ -190,12 +204,18 @@ body {
 .bio-text {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    align-self: center; /* Centra verticalmente el texto en su cuadrante */
 }
 
 .profile-picture {
     object-fit: cover;
     max-width: 250px;
-    max-height: 300px;
+    max-height: 250px;
+    border-radius: 10px; /* Mantén los bordes redondeados */
 }
 
 .bio-header h2 {
@@ -205,6 +225,7 @@ body {
     text-transform: uppercase;
     align-self: center; /* Centra verticalmente */
 }
+
 
 
 
