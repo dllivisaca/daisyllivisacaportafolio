@@ -180,56 +180,68 @@ body {
 
 /* Biografía */
 .bio-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    width: 100%;
-    max-width: 900px;
+    display: grid; /* Activa el grid layout */
+    grid-template-columns: auto 1fr; /* Define dos columnas: una para "Biografía" y otra para "Apasionada por aprender" */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    gap: 10px; /* Añade espacio entre las columnas */
+    width: 100%; /* Asegura que el grid ocupe todo el ancho */
+    max-width: 900px; /* Limita el ancho máximo */
     margin: 0 auto; /* Centra horizontalmente */
     padding: 0;
     box-sizing: border-box;
 }
 
 .bio-header h2 {
+    grid-area: bio-title; /* Asigna al área 'bio-title' */
     font-size: 2rem;
     color: #333;
-    margin-bottom: 20px;
+    margin: 0;
     text-transform: uppercase;
+    align-self: center; /* Centra verticalmente */
 }
 
 .bio-header .highlight {
-    font-size: 1.2rem; /* Tamaño del subtítulo */
+    grid-area: bio-highlight; /* Asigna al área 'bio-highlight' */
+    font-size: 1.2rem;
     font-weight: bold;
     color: #333;
-    background-color: #fdf4e6; /* Fondo suave */
+    background-color: #fdf4e6;
     padding: 5px 10px;
     border-radius: 5px;
-    margin: 0; /* Quita márgenes */
+    margin: 0;
+    white-space: nowrap; /* Evita que pase a otra línea */
+    align-self: center; /* Centra verticalmente */
 }
 
 .bio-content {
-    display: flex;
-    align-items: center; /* Alinea la imagen y el texto al principio */
-    gap: 80px; /* Ajusta el espacio entre los elementos */
-    width: 100%; /* Asegura que ocupa el ancho completo */
-    max-width: 900px; /* Controla el ancho máximo */
+    display: grid; /* Activa el grid layout */
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-template-rows: auto auto; /* Dos filas automáticas */
+    grid-template-areas: 
+        "bio-title bio-highlight"
+        "bio-image bio-text"; /* Define las áreas del grid */
+    gap: 20px; /* Espaciado entre filas y columnas */
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: start; /* Alinea los elementos al inicio */
 }
 
 .profile-picture {
-    width: auto; /* Ajuste automático del ancho */
-    max-width: 250px; /* Aumenta el ancho máximo */
-    max-height: 300px; /* Aumenta la altura máxima */
-    object-fit: cover; /* Mantiene las proporciones */
-    border-radius: 10px; /* Bordes redondeados */
+    grid-area: bio-image; /* Ubica la imagen en la primera columna, segunda fila */
+    width: auto;
+    max-width: 250px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .bio-text {
-    flex: 1;
+    grid-area: bio-text; /* Ubica el texto en la segunda columna, segunda fila */
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
-    text-align: justify; /* Justifica el texto */
+    text-align: justify;
 }
 
 .highlight {
