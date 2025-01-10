@@ -235,6 +235,70 @@ body {
     align-self: center; /* Centra verticalmente */
 }
 
+/*Tercera hoja*/
+.third-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr;
+    row-gap: 40px;
+    padding: 60px 60px;
+    column-gap: 80px;
+    height: 100vh; /* Ajustar al tamaño de la ventana */
+    box-sizing: border-box; /* Incluye el padding dentro de la altura */
+    justify-content: start; /* Asegura que el contenido inicie en la parte superior */
+    align-content: center; /* Centra todo el contenido */
+    background-color: #f6f6f6;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+    align-self: center; /* Centra verticalmente */
+}
+
+.skills-list1 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: left;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.icons {
+    gap: 20px;
+    justify-items: center;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.img_icon {
+    object-fit: cover;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 10px; /* Mantén los bordes redondeados */
+}
+
+.skills-list2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: left;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
 
 
 
