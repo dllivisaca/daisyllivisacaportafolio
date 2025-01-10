@@ -238,16 +238,17 @@ body {
 /*Tercera hoja*/
 .third-page {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 3fr;
     row-gap: 40px;
     padding: 60px 60px;
     column-gap: 80px;
     height: 100vh; /* Ajustar al tamaño de la ventana */
     box-sizing: border-box; /* Incluye el padding dentro de la altura */
-    justify-content: start; /* Asegura que el contenido inicie en la parte superior */
+    justify-content: center; /* Asegura que el contenido se centre horizontalmente */
     align-content: center; /* Centra todo el contenido */
     /* background-color: #f6f6f6; */
+    max-width: 100%;
 }
 
 .section-title {
@@ -279,8 +280,11 @@ body {
 }
 
 .icons {
-    gap: 20px;
-    justify-items: center;
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    /* gap: 20px;
+    justify-items: center; */
     grid-row: 2 / 3;
     grid-column: 2 / 3;
 }
@@ -301,6 +305,22 @@ body {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
 }
+
+.skills-list1, .skills-list2 {
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: flex-start; /* Alinea horizontalmente a la izquierda */
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #555;
+    height: 100%; /* Asegura que ocupen todo el espacio del cuadrante */
+    text-align: left; /* Mantiene el texto alineado a la izquierda */
+}
+
+
+
 
 
 
