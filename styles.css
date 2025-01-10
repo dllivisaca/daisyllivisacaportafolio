@@ -181,14 +181,14 @@ body {
 /* Biografía */
 .bio-header {
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: flex-start; /* Alinea hacia la izquierda */
-    gap: 20px; /* Espacio entre "BIOGRAFÍA" y el subtítulo */
-    margin-left: 0; /* Asegúrate de que no haya márgenes adicionales */
-    padding-left: 0; /* Elimina el relleno */
-    width: 900px; /* Ancho consistente con el contenido */
-    max-width: 100%;
-    box-sizing: border-box; /* Asegura que ancho y padding no se sumen */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .bio-header h2 {
@@ -233,12 +233,13 @@ body {
 }
 
 .highlight {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #333;
-    background-color: #fdf4e6; /* Color de fondo suave */
+    background-color: #fdf4e6;
     padding: 5px 10px;
     border-radius: 5px;
     margin-bottom: 15px;
+    display: inline-block; /* Se asegura de que no ocupe todo el ancho */
+    margin-left: 0; /* Alinea al margen izquierdo */
 }
-
