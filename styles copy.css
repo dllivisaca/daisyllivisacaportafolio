@@ -167,11 +167,15 @@ body {
 .second-page {
     display: grid;
     grid-template-columns: auto 3fr;
-    grid-template-rows: auto 3fr;
+    grid-template-rows: 1.2 2fr;
     row-gap: 40px;
-    padding: 40px 60px;
+    padding: 60px 60px;
     column-gap: 80px;
-  }
+    height: 100vh; /* Ajustar al tamaño de la ventana */
+    box-sizing: border-box; /* Incluye el padding dentro de la altura */
+    justify-content: start; /* Asegura que el contenido inicie en la parte superior */
+    align-content: center; /* Empuja los elementos hacia abajo si hay espacio */
+}
 
 .bio-header {
     grid-row: 1 / 2;
@@ -186,7 +190,7 @@ body {
 
 .bio-sub-header .highlight {
     grid-area: bio-highlight; /* Asigna al área 'bio-highlight' */
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #333;
     background-color: #fdf4e6;
@@ -199,12 +203,13 @@ body {
 .bio-image {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    align-self: center; /* Alinea verticalmente la imagen */
 }
 
 .bio-text {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    font-size: 1rem;
+    font-size: 1.18rem;
     color: #555;
     line-height: 1.6;
     text-align: justify;
