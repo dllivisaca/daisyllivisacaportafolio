@@ -238,17 +238,16 @@ body {
 /*Tercera hoja*/
 .third-page {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr; /* Ajusta las proporciones de las columnas */
     grid-template-rows: 1fr 3fr;
     row-gap: 40px;
-    padding: 60px 60px;
-    column-gap: 80px;
-    height: 100vh; /* Ajustar al tamaño de la ventana */
-    box-sizing: border-box; /* Incluye el padding dentro de la altura */
-    justify-content: center; /* Asegura que el contenido se centre horizontalmente */
-    align-content: center; /* Centra todo el contenido */
-    /* background-color: #f6f6f6; */
-    max-width: 100%;
+    padding: 0; /* Elimina padding interno */
+    column-gap: 20px; /* Reduce el espacio entre columnas */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: center; /* Centra el grid en la página */
+    align-content: center; /* Centra el contenido del grid verticalmente */
 }
 
 .section-title {
@@ -309,15 +308,16 @@ body {
 .skills-list1, .skills-list2 {
     display: flex; /* Activa flexbox */
     flex-direction: column; /* Coloca los elementos en columna */
-    justify-content: center; /* Centra verticalmente */
+    justify-content: flex-start; /* Alinea verticalmente hacia la parte superior del cuadrante */
     align-items: flex-start; /* Alinea horizontalmente a la izquierda */
-    padding: 0;
-    margin: 0;
+    padding: 0; /* Elimina padding interno */
+    margin: 0; /* Elimina margen externo */
     font-size: 1.2rem;
     color: #555;
-    height: 100%; /* Asegura que ocupen todo el espacio del cuadrante */
+    height: 100%; /* Asegura que ocupen todo el espacio vertical del cuadrante */
     text-align: left; /* Mantiene el texto alineado a la izquierda */
 }
+
 
 
 
