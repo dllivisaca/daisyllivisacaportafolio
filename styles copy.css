@@ -355,21 +355,40 @@ body {
     font-size: 1.6rem;
     margin-left: 30px; 
     color: #555;
-    text-align: left;
-    
+    text-align: left;    
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Alinea verticalmente hacia la parte superior */
-    align-items: center; /* Alinea horizontalmente a la izquierda */
+    align-items: flex-start; /* Alinea horizontalmente */
+    position: relative; /* Permite que el semicírculo se posicione dentro */
 }
 
+.lang_icons {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Centra verticalmente */
+    /* gap: 20px;
+    justify-items: center; */
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
 
+.img_lang_icon {
+    object-fit: cover;
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 10px; /* Mantén los bordes redondeados */
+}
 
-
-
-
-
-
-
-
-
+.semicircle {
+    width: 200px; /* Ajusta el ancho del semicírculo */
+    height: 200px; /* Altura igual al ancho */
+    background: linear-gradient(90deg, #d4aaff, #90e0ff); /* Gradiente lila-azul */
+    border-radius: 100%; /* Hace un círculo */
+    position: absolute; /* Posiciona relativo al contenedor */
+    top: 0; /* Ajusta la posición hacia arriba */
+    left: -20px; /* Ajusta la posición hacia la izquierda */
+    z-index: -1; /* Envía el semicírculo detrás del texto */
+}
