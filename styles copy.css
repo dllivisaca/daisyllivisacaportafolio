@@ -382,13 +382,13 @@ body {
 }
 
 .semicircle {
-    width: 200px; /* Ancho del semicírculo */
-    height: 100px; /* Altura del semicírculo */
+    width: 300px; /* Ajusta el ancho del semicírculo */
+    height: 150px; /* Altura del semicírculo */
     background: linear-gradient(90deg, #d4aaff, #90e0ff); /* Gradiente lila-azul */
-    border-radius: 100px 100px 0 0; /* Hace redondeado solo la parte superior */
+    border-radius: 150px 150px 0 0; /* Hace redondeado solo la parte superior */
     position: absolute; /* Se posiciona relativo al contenedor .lang-list */
-    top: 0; /* Ajusta la parte superior */
-    left: 0; /* Ajusta la parte izquierda */
+    bottom: 0; /* Mueve el semicírculo al borde inferior */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición */
     z-index: -1; /* Envía el semicírculo detrás de la lista */
 }
-
