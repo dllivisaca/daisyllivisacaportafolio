@@ -350,10 +350,9 @@ body {
 }
 
 .lang-list {
-    padding: 0;
-    margin: 0;
-    font-size: 1.6rem;
-    margin-left: 30px; 
+    padding: 20px;
+    margin-left: 30px;
+    font-size: 1.6rem; 
     color: #555;
     text-align: left;    
     grid-row: 2 / 3;
@@ -383,12 +382,13 @@ body {
 }
 
 .semicircle {
-    width: 200px; /* Ajusta el ancho del semicírculo */
-    height: 200px; /* Altura igual al ancho */
+    width: 200px; /* Ancho del semicírculo */
+    height: 100px; /* Altura del semicírculo */
     background: linear-gradient(90deg, #d4aaff, #90e0ff); /* Gradiente lila-azul */
-    border-radius: 100%; /* Hace un círculo */
-    position: absolute; /* Posiciona relativo al contenedor */
-    top: 0; /* Ajusta la posición hacia arriba */
-    left: -20px; /* Ajusta la posición hacia la izquierda */
-    z-index: -1; /* Envía el semicírculo detrás del texto */
+    border-radius: 100px 100px 0 0; /* Hace redondeado solo la parte superior */
+    position: absolute; /* Se posiciona relativo al contenedor .lang-list */
+    top: 0; /* Ajusta la parte superior */
+    left: 0; /* Ajusta la parte izquierda */
+    z-index: -1; /* Envía el semicírculo detrás de la lista */
 }
+
