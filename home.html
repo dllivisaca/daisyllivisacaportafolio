@@ -175,13 +175,34 @@
                     <li>Certificado nivel C2 en Inglés.</li>
                     <li>Alto puntaje en la prueba TOEFL Jr.</li>
                 </ul>
-            </div>
+            </div> 
+            
+            <!-- <div class="video-container">
+                <video class="video_element" controls>
+                  <source src="video_ceremonia.mp4" type="video/mp4">
+                  Tu navegador no soporta el elemento de video.
+                </video>
+            </div> -->
 
-            <div class="woman_image">
-                <img src="business_woman.jpg" alt="mujer trabajadora" class="img_woman">
-            </div>     
+            <div class="video-container" style="grid-row: 2 / 4; grid-column: 3 / 4; display: flex; justify-content: center; align-items: flex-end;">
+                <video class="video_element" autoplay muted controls id="graduation_video" style="object-fit: cover; max-width: 320px; max-height: 380px; border-radius: 10px;">
+                    <source src="video_ceremonia.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            
         </div>
 
     </div>
+
+    <script>
+        // Detectar cuando el video termina
+        const video = document.getElementById('graduation_video');
+        video.addEventListener('ended', () => {
+            // Desactiva autoplay después de la primera reproducción
+            video.autoplay = false;
+            video.muted = false; // Opcional: activa el sonido después de la primera reproducción
+        });
+    </script>
 </body>
 </html>

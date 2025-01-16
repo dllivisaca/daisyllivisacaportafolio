@@ -494,7 +494,7 @@ body {
 /*Sexta hoja*/
 .sixth-page {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr; /* Ajusta las proporciones de las columnas */
+    grid-template-columns: 1.2fr 0.75fr 1.2fr; /* Ajusta las proporciones de las columnas */
     grid-template-rows: 1fr 2fr 2fr;
     row-gap: 0px;
     padding: 0; /* Elimina padding interno */
@@ -504,6 +504,7 @@ body {
     box-sizing: border-box;
     justify-content: center; /* Centra el grid en la página */
     align-content: center; /* Centra el contenido del grid verticalmente */
+    text-align: justify;
 }
 
 .section4-title1 {
@@ -571,22 +572,22 @@ body {
     justify-content: flex-start; /* Alinea verticalmente hacia la parte superior */
     align-items: flex-start; /* Alinea horizontalmente */
     position: relative; /* Permite que el semicírculo se posicione dentro */
-    line-height: 1.8; /* Ajusta el interlineado */
+    line-height: 2.2; /* Ajusta el interlineado */
 }
 
-.woman_image {
+.video_container {
+    grid-row: 2 / 4;
+    grid-column: 3 / 4;
     display: flex; /* Activa flexbox */
     justify-content: center; /* Centra horizontalmente */
     align-items: flex-end; /* Centra verticalmente */
-    grid-row: 2 / 4;
-    grid-column: 3 / 4  ;
 }
 
-.img_woman {
-    object-fit: cover;
-    max-width: 320px;
-    max-height: 380px;
-    border-radius: 10px; /* Mantén los bordes redondeados */
+.video_element {
+    object-fit: cover; /* Ajusta el video al tamaño especificado */
+    max-width: 320px; /* Ancho máximo del video */
+    max-height: 380px; /* Alto máximo del video */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 .graduation_image {
