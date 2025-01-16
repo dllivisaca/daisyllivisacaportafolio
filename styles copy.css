@@ -610,7 +610,7 @@ body {
 .seventh-page {
     display: grid;
     grid-template-columns: 1.2fr 1fr; /* Ajusta las proporciones de las columnas */
-    grid-template-rows: 1fr 1fr 2.5fr;
+    grid-template-rows: 1fr 1fr 4fr;
     row-gap: 0px;
     padding: 0; /* Elimina padding interno */
     column-gap: 20px; /* Reduce el espacio entre columnas */
@@ -662,9 +662,10 @@ body {
 .image1 {
     display: flex; /* Activa flexbox */
     justify-content: center; /* Centra horizontalmente */
-    align-items: flex-end; /* Centra verticalmente */
+    align-items: flex-start; /* Centra verticalmente */
     grid-row: 3 / 4;
-    grid-column: 1 / 2  ;
+    grid-column: 1 / 2;
+    margin-top: 20px; /* Ajusta el margen para alinearlo con la línea roja */
 }
 
 .img_1 {
