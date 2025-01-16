@@ -606,3 +606,73 @@ body {
 }
 
 
+/*Séptima hoja*/
+.seventh-page {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* Ajusta las proporciones de las columnas */
+    grid-template-rows: 1fr 1fr 2.5fr;
+    row-gap: 0px;
+    padding: 0; /* Elimina padding interno */
+    column-gap: 20px; /* Reduce el espacio entre columnas */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: center; /* Centra el grid en la página */
+    align-content: center; /* Centra el contenido del grid verticalmente */
+    text-align: justify;
+}
+
+.section5-title1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    align-self: center; /* Centra verticalmente en la fila */
+    justify-self: center; /* Centra horizontalmente en la columna */
+    margin: 0; /* Elimina márgenes extra */
+}
+
+.section5-title1 h2 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    align-self: center; /* Centra verticalmente */
+}
+
+.section5-title2 {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    align-self: center; /* Centra verticalmente en la fila */
+    justify-self: center; /* Centra horizontalmente en la columna */
+    margin: 0; /* Elimina márgenes extra */
+}
+
+.section4-title2 h2 {
+    font-size: 2.3rem;
+    color: #333;
+    margin: 0;
+    align-self: center; /* Centra verticalmente */
+}
+
+.image1 {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-end; /* Centra verticalmente */
+    grid-row: 3 / 4;
+    grid-column: 1 / 2  ;
+}
+
+.img_1 {
+    object-fit: cover;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 10px; /* Mantén los bordes redondeados */
+}
+
+
+
