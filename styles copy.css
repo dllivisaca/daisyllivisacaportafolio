@@ -3,11 +3,12 @@ body {
     padding: 0;
     font-family: 'Poppins', 'Montserrat', sans-serif;
     background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Alto completo */
+    overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+    display: block; /* Cambia flex a block si no se necesita flex en body */
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .container {
@@ -624,17 +625,6 @@ body {
     overflow: hidden; /* Para que no se salga de los límites */
 }
 
-.rectangle {
-    width: 150%; /* Ancho del rectángulo */
-    height: 220px; /* Alto del rectángulo */
-    background: linear-gradient(90deg, #f1fdf6, #e7f0fd); /* Gradiente lila-azul */
-    position: absolute; /* Posición relativa al contenedor padre */
-    top: 50%; /* Ubica al 50% de la altura del contenedor */
-    left: 50%; /* Ubica al 50% del ancho del contenedor */
-    transform: translate(-50%, -50%) rotate(-15deg); /* Centra el rectángulo */
-    z-index: -1; /* Envía el rectángulo detrás del contenido principal */
-}
-
 .section5-title1 {
     text-transform: uppercase;
     font-weight: bold;
@@ -724,15 +714,17 @@ body {
     overflow: hidden; /* Para que no se salga de los límites */
 }
 
+/* Estilo del rectángulo */
 .rectangle {
     width: 150%; /* Ancho del rectángulo */
-    height: 220px; /* Alto del rectángulo */
+    height: 220px; /* Altura del rectángulo */
     background: linear-gradient(90deg, #f1fdf6, #e7f0fd); /* Gradiente lila-azul */
-    position: absolute; /* Posición relativa al contenedor padre */
+    position: absolute; /* Se posiciona relativo al contenedor padre */
     top: 50%; /* Ubica al 50% de la altura del contenedor */
     left: 50%; /* Ubica al 50% del ancho del contenedor */
-    transform: translate(-50%, -50%) rotate(-15deg); /* Centra el rectángulo */
+    transform: translate(-50%, -50%) rotate(-15deg); /* Centra y rota el rectángulo */
     z-index: -1; /* Envía el rectángulo detrás del contenido principal */
+    min-width: 100vw; /* Evita que sea más pequeño que el ancho del viewport */
 }
 
 .section6-title1 {
