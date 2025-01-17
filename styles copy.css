@@ -710,7 +710,7 @@ body {
 .eight-page {
     display: grid;
     grid-template-columns: 1fr 1.3fr; /* Ajusta las proporciones de las columnas */
-    grid-template-rows: .5fr 2fr .3fr .5fr;
+    grid-template-rows: .5fr 1fr .2fr .5fr;
     row-gap: 0px;
     padding: 0; /* Elimina padding interno */
     column-gap: 20px; /* Reduce el espacio entre columnas */
@@ -853,7 +853,6 @@ body {
 
 /* Contenedor del botón de link*/
 .link-container {
-  
     margin: 0 auto; /* Centra horizontalmente */
     grid-row: 4 / 5;
     grid-column: 2 / 3;
@@ -862,14 +861,14 @@ body {
 /* Estilo del botón */
 .custom-button {
     display: inline-block;
-    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    padding: 15px 30px; /* Ajusta el tamaño del botón */
     background-color: #6b6b6b; /* Color de fondo */
     color: #ffffff; /* Color del texto */
     text-decoration: none; /* Elimina el subrayado predeterminado */
     font-family: 'Poppins', sans-serif; /* Fuente */
-    font-size: 14px; /* Tamaño de fuente */
+    font-size: 16px; /* Tamaño de fuente */
     font-weight: bold; /* Negrita */
-    border-radius: 25px; /* Bordes redondeados para forma ovalada */
+    border-radius: 45px; /* Bordes redondeados para forma ovalada */
     text-align: center; /* Centra el texto */
     position: relative; /* Necesario para el subrayado personalizado */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
