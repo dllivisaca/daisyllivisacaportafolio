@@ -1832,7 +1832,9 @@ body {
 .section16-descripcion {
     padding: 20px;
     margin-left: 0rem;
-    font-size: 1.4rem; 
+    padding-left: 5rem; /* Aplica sangría sin afectar el fondo */
+    padding-right: 5rem; /* Aplica sangría sin afectar el fondo */
+    font-size: 1.5rem; 
     color: #555;
     text-align: justify;    
     grid-row: 1 / 2;
@@ -1843,7 +1845,6 @@ body {
     align-items: center; /* Alinea horizontalmente */
     position: relative; /* Permite que el semicírculo se posicione dentro */
     line-height: 2.2; /* Ajusta el interlineado */
-    text-align: justify;
     background-color: #f0f0f0; /* Color gris claro */
 }
 
