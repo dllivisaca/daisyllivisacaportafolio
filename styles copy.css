@@ -700,7 +700,7 @@ body {
 .eight-page {
     display: grid;
     grid-template-columns: 1fr 1.3fr; /* Ajusta las proporciones de las columnas */
-    grid-template-rows: .5fr 1fr .2fr .5fr;
+    grid-template-rows: .4fr 1fr .2fr .5fr;
     row-gap: 0px;
     padding: 0; /* Elimina padding interno */
     column-gap: 20px; /* Reduce el espacio entre columnas */
@@ -729,7 +729,8 @@ body {
 
 .section6-title1 {
     text-transform: uppercase;
-    padding: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
     font-weight: bold;
     color: #333;
     text-align: center;
@@ -750,7 +751,8 @@ body {
 
 .section6-title2 {
     text-transform: uppercase;
-    padding: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
     font-weight: bold;
     color: #333;
     text-align: center;
