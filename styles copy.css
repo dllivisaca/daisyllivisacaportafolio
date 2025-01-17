@@ -853,9 +853,7 @@ body {
 
 /* Contenedor del botón de link*/
 .link-container {
-    position: relative;
-    width: 50px; /* Ajusta el tamaño del contenedor */
-    height: 50px;
+  
     margin: 0 auto; /* Centra horizontalmente */
     grid-row: 4 / 5;
     grid-column: 2 / 3;
