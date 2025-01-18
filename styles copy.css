@@ -2,13 +2,82 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', 'Montserrat', sans-serif;
-
     overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
     display: block; /* Cambia flex a block si no se necesita flex en body */
 }
 
 * {
     box-sizing: border-box;
+}
+
+/* Animaciones 1era pagina */
+/* Animación para la entrada de los títulos */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación para el enlace */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animación para la imagen */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.name {
+    animation: fadeInUp 1s ease-out;
+}
+
+.portfolio-title {
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.contact-link {
+    animation: fadeInRight 1.5s ease-out;
+}
+
+.subtitle {
+    animation: fadeInRight 1.5s ease-out;
+}
+
+.coding-image {
+    animation: zoomIn 2s ease-out;
+}
+/**/
+/* Estado inicial (oculto) */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px); /* Puedes ajustar la dirección de la animación */
+    transition: all 0.8s ease-out; /* Control de tiempo y suavidad */
+}
+
+/* Estado visible (animado) */
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0); /* Regresa a su posición original */
 }
 
 .container {
@@ -249,6 +318,7 @@ body {
     box-sizing: border-box;
     justify-content: center; /* Centra el grid en la página */
     align-content: center; /* Centra el contenido del grid verticalmente */
+    background-color: #f6f6f6;
 }
 
 .section-title {
@@ -407,6 +477,7 @@ body {
     box-sizing: border-box;
     justify-content: center; /* Centra el grid en la página */
     align-content: center; /* Centra el contenido del grid verticalmente */
+    background-color: #f6f6f6;
 }
 
 .section3-title1 {

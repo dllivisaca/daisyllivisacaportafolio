@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="first-page">
+        <div class="animate-on-scroll page first-page">
             <div class="left-section">
                 <h1 class="portfolio-title">Portafolio</h1>
                 <h2 class="name">Daisy LLivisaca</h2>
@@ -22,7 +22,7 @@
                 <img src="coding.jpg" alt="Coding Image" class="coding-image">
             </div>
         </div>
-        <div class="second-page">
+        <div class="animate-on-scroll page second-page">
             <div class="bio-header">
                 <h2>Biografía</h2>
             </div>
@@ -41,7 +41,7 @@
                 </p>
             </div>
         </div>
-        <div class="third-page">
+        <div class="animate-on-scroll page third-page">
             <div class="section-title">
                 <h2>Informática</h2>
             </div>
@@ -76,7 +76,7 @@
             </div>            
         </div>
 
-        <div class="fourth-page">
+        <div class="animate-on-scroll page fourth-page">
             <div class="section2-title">
                 <h2>Programación</h2>
             </div>
@@ -96,7 +96,7 @@
             </div>     
         </div>
 
-        <div class="fifth-page">
+        <div class="animate-on-scroll page fifth-page">
             <div class="section3-title1">
                 <h2>Experiencia Laboral</h2>
             </div>
@@ -144,7 +144,7 @@
             </div>     
         </div>
 
-        <div class="sixth-page">
+        <div class="animate-on-scroll page sixth-page">
             <div class="section4-title1">
                 <h2>Educación</h2>
             </div>
@@ -192,7 +192,7 @@
             </div>
         </div>
 
-        <div class="x-page">
+        <div class="animate-on-scroll page x-page">
             <div class="rectangle1"></div>
 
              <div class="sectionx-title1">
@@ -212,7 +212,7 @@
             </div> 
         </div>
 
-        <div class="x-page2">
+        <div class="animate-on-scroll page x-page2">
             <div class="rectangle1"></div>
 
             <div class="image16">
@@ -232,7 +232,7 @@
             </div> 
         </div>
 
-        <div class="x-page3">
+        <div class="animate-on-scroll page x-page3">
             <div class="rectangle1"></div>
             
              <div class="sectionx3-title1">
@@ -276,7 +276,7 @@
             </div>
         </div>
 
-        <div class="seventh-page">
+        <div class="animate-on-scroll page seventh-page">
             <div class="rectangle"></div>
 
              <div class="section5-title1">
@@ -296,7 +296,7 @@
             </div> 
         </div>
 
-        <div class="eight-page">
+        <div class="animate-on-scroll page eight-page">
             <div class="rectangle"></div>
             
              <div class="section6-title1">
@@ -336,7 +336,7 @@
             </div>
         </div>
 
-        <div class="ninth-page">
+        <div class="animate-on-scroll page ninth-page">
             <div class="rectangle2"></div>
 
              <div class="section7-title1">
@@ -360,7 +360,7 @@
             </div> 
         </div>
 
-        <div class="tenth-page">
+        <div class="animate-on-scroll page tenth-page">
             <div class="rectangle2"></div>
             
              <div class="section8-title1">
@@ -398,7 +398,7 @@
             </div>
         </div>
 
-        <div class="eleventh-page">
+        <div class="animate-on-scroll page eleventh-page">
             <div class="rectangle3"></div>
 
              <div class="section9-title1">
@@ -422,7 +422,7 @@
             </div> 
         </div>
 
-        <div class="twelfth-page">
+        <div class="animate-on-scroll page twelfth-page">
             <div class="rectangle3"></div>
             
              <div class="section10-title1">
@@ -464,7 +464,7 @@
             </div>
         </div>
 
-        <div class="thirteenth-page">
+        <div class="animate-on-scroll page thirteenth-page">
             <div class="rectangle4"></div>
 
              <div class="section11-title1">
@@ -488,7 +488,7 @@
             </div> 
         </div>
 
-        <div class="fourteenth-page">
+        <div class="animate-on-scroll page fourteenth-page">
             <div class="rectangle4"></div>
             
              <div class="section12-title1">
@@ -520,7 +520,7 @@
             </div>
         </div>
 
-        <div class="fifteenth-page">
+        <div class="animate-on-scroll page fifteenth-page">
             <div class="rectangle5"></div>
 
              <div class="section13-title1">
@@ -540,7 +540,7 @@
             </div> 
         </div>
 
-        <div class="sixteenth-page">
+        <div class="animate-on-scroll page sixteenth-page">
             <div class="rectangle5"></div>
             
              <div class="section14-title1">
@@ -573,7 +573,7 @@
             </div>
         </div>
 
-        <div class="seventeenth-page">         
+        <div class="animate-on-scroll page seventeenth-page">         
              <div class="section15-title">
                 <h2>Cursos y Capacitaciones</h2>
             </div>
@@ -597,7 +597,7 @@
             </div>
         </div>
 
-        <div class="eighteenth-page">         
+        <div class="animate-on-scroll page eighteenth-page">         
            <div class="section16-descripcion">
                 <p>
                     Deseo trabajar en una empresa que me permita expandir mis conocimientos y donde pueda crecer profesionalmente en el área informática.
@@ -609,7 +609,7 @@
            </div>
        </div>
 
-       <div id="nineteenth-page" class="nineteenth-page">   
+       <div id="nineteenth-page" class="animate-on-scroll page nineteenth-page">   
             <div class="section17-title">
                 <h2>Contáctame</h2>
             </div>
@@ -652,6 +652,29 @@
             video.autoplay = false;
             video.muted = false; // Opcional: activa el sonido después de la primera reproducción
         });
+
+        document.addEventListener("DOMContentLoaded", () => {
+        const options = {
+            root: null, // Ventana del navegador
+            threshold: 0.1 // Activar cuando al menos el 10% del elemento sea visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible"); // Agrega la clase visible
+                    observer.unobserve(entry.target); // Deja de observar el elemento
+                }
+            });
+        }, options);
+
+        // Selecciona todos los elementos que tengan la clase `animate-on-scroll`
+        const animatedElements = document.querySelectorAll(".animate-on-scroll");
+
+        // Observa cada elemento
+        animatedElements.forEach(el => observer.observe(el));
+    });
+
     </script>
 </body>
 </html>
