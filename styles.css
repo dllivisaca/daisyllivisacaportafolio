@@ -233,57 +233,6 @@ body {
     }
 }
 
-/*Responsive pag 1*/
-@media (max-width: 1024px) {
-    .first-page {
-        flex-direction: column; /* Cambia la disposición a columna */
-        padding: 20px; /* Reduce el padding para maximizar el espacio */
-        height: auto; /* Permite que la altura sea dinámica */
-        justify-content: flex-start; /* Asegura que todo el contenido quede visible */
-        align-items: center; /* Centra horizontalmente */
-    }
-
-    .left-section {
-        width: 100%; /* Ocupa todo el ancho disponible */
-        text-align: center; /* Centra el texto */
-        margin-bottom: 20px; /* Agrega espacio debajo de la sección izquierda */
-    }
-
-    .portfolio-title {
-        font-size: 1.5rem; /* Ajusta el tamaño del texto del título */
-        margin-bottom: 10px; /* Espacio debajo del título */
-    }
-
-    .name {
-        font-size: 3rem; /* Reduce ligeramente el tamaño del nombre */
-        margin: 10px 0; /* Espaciado más compacto */
-    }
-
-    .info-line {
-        flex-direction: column; /* Apila los elementos en columna */
-        gap: 10px; /* Espaciado entre elementos */
-        justify-content: center; /* Centra el contenido */
-    }
-
-    .contact-link {
-        font-size: 1rem; /* Ajusta el tamaño del texto del enlace */
-        padding: 8px; /* Espaciado adicional */
-        border-width: 1px; /* Reduce el grosor del borde */
-    }
-
-    .right-section {
-        width: 100%; /* Ocupa todo el ancho disponible */
-        height: auto; /* Ajusta la altura de forma dinámica */
-    }
-
-    .coding-image {
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho */
-        height: auto; /* Mantiene las proporciones */
-        max-height: 400px; /* Límite para evitar que sea demasiado alta */
-        object-fit: cover; /* Evita recortes y asegura una buena proporción */
-    }
-}
-
 /*Segunda hoja*/
 .second-page {
     display: grid;
@@ -523,58 +472,6 @@ body {
     flex-direction: column; /* Coloca los elementos en columna */
     justify-content: flex-start; /* Alinea verticalmente hacia la parte superior del cuadrante */
     align-items: center; 
-}
-
-/*Responsive pag 3*/
-@media (min-width: 1024px) {
-    .third-page { 
-        grid-template-columns: 1fr 1fr 1fr; /* Ajusta las proporciones de las columnas */
-        grid-template-rows: 1fr 3fr;
-    }    
-}
-  
-/* Ajustes para móviles (768px o menos) */
-@media (max-width: 768px) {
-    .third-page { 
-        grid-template-columns: 1fr; /* Una sola columna */
-        grid-template-rows: auto auto auto auto; /* Cada elemento ocupa una fila */
-        row-gap: 15px; /* Espacio entre filas */
-    }   
-
-    .section-title {
-        grid-row: 1 / 2; /* Mantén el título en la primera fila */
-        text-align: center; /* Centra el texto */
-    }
-
-    .skills-list1 {
-        grid-row: 2 / 3; /* Ubica la primera lista en la segunda fila */
-        grid-column: 1 / 2; /* Una sola columna */
-        font-size: 1.2rem; /* Ajusta el tamaño del texto */
-        margin-left: 0; /* Elimina márgenes laterales */
-        align-items: flex-start; /* Alinea la lista hacia la izquierda */
-        padding: 0 10px; /* Añade un poco de padding horizontal */
-    }
-
-    .icons {
-        grid-row: 3 / 4; /* Ubica la imagen en la tercera fila */
-        grid-column: 1 / 2;
-        justify-content: center; /* Centra la imagen horizontalmente */
-        align-items: center;
-    }
-
-    .img_icon {
-        max-width: 80%; /* Ajusta el ancho máximo para pantallas pequeñas */
-        height: auto; /* Mantiene las proporciones */
-        border-radius: 10px; /* Mantén los bordes redondeados */
-    }
-
-    .skills-list2 {
-        grid-row: 4 / 5; /* Ubica la segunda lista en la última fila */
-        grid-column: 1 / 2;
-        font-size: 1.2rem; /* Ajusta el tamaño del texto */
-        align-items: flex-start; /* Alinea la lista hacia la izquierda */
-        padding: 0 10px; /* Añade un poco de padding horizontal */
-    }
 }
 
 /*Cuarta hoja*/
@@ -1000,8 +897,8 @@ body {
 
 .img_16 {
     object-fit: cover;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 10px; /* Mantén los bordes redondeados */
 }
 
@@ -1016,8 +913,8 @@ body {
 
 .img_17 {
     object-fit: cover;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 10px; /* Mantén los bordes redondeados */
 }
 
@@ -1032,8 +929,8 @@ body {
 
 .img_18 {
     object-fit: cover;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 10px; /* Mantén los bordes redondeados */
 }
 
@@ -1048,8 +945,8 @@ body {
 
 .img_19 {
     object-fit: cover;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 10px; /* Mantén los bordes redondeados */
 }
 
@@ -1118,7 +1015,7 @@ body {
 .sectionx3-descripcion {
     padding: 20px;
     margin-left: 5rem;
-    font-size: 1.1rem; 
+    font-size: 1rem; 
     color: #555;
     text-align: left;    
     grid-row: 2 / 5;
@@ -1135,7 +1032,7 @@ body {
 .sectionx3-tecnologias {
     padding: 20px;
     margin-left: 5rem;
-    font-size: 1.1rem; 
+    font-size: 1rem; 
     color: #555;
     text-align: left;    
     grid-row: 2 / 3;
@@ -2007,8 +1904,8 @@ body {
 
 .img_9 {
     object-fit: cover;
-    max-width: 420px;
-    max-height: 420px;
+    max-width: 360px;
+    max-height: 360px;
     border-radius: 10px; /* Mantén los bordes redondeados */
 }
 
@@ -2023,8 +1920,8 @@ body {
 
 .img_10 {
     object-fit: cover;
-    max-width: 420px;
-    max-height: 420px;;
+    max-width: 360px;
+    max-height: 360px;;
     border-radius: 10px; /* Mantén los bordes redondeados */
 }
 
@@ -2039,8 +1936,8 @@ body {
 
 .img_11 {
     object-fit: cover;
-    max-width: 420px;
-    max-height: 420px;
+    max-width: 360px;
+    max-height: 360px;
     border-radius: 10px; /* Mantén los bordes redondeados */
 }
 
@@ -2617,4 +2514,3 @@ body {
     background: linear-gradient(90deg, #fff1b2, #ffc3e1); /* Gradiente */
     transform: skewX(20deg); /* Inclinación hacia la izquierda */
 }
-
