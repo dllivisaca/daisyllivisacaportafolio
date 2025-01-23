@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Daisy LLivisaca</title>
+    <link rel="stylesheet" href="styles copy 2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="grid-container">
+        
+        <div class="page">
+            <div class="section-title">
+                <h2>Informática</h2>
+            </div>
+            
+            <div class="skills-list1">
+                <ul>
+                    <li>Word</li>
+                    <li>Excel</li>
+                    <li>PowerPoint</li>
+                    <li>Figma</li>
+                    <li>Visual Studio</li>
+                    <li>Github</li>
+                    <li>HTML 5</li>
+                    <li>CSS3</li>
+                </ul>
+            </div>
+            
+            <div class="icons">
+                <img src="img/icons.png" alt="íconos" class="img_icon">
+            </div>
+
+            <div class="skills-list2">
+                <ul>
+                    <li>SASS</li>
+                    <li>JavaScript</li>
+                    <li>Gimp</li>
+                    <li>Android Studio</li>
+                    <li>SQL Server</li>
+                    <li>MongoDB</li>
+                    <li>Power BI</li>
+                </ul>
+            </div>            
+        </div>
+        
+    </div>
+    </div>
+
+    <script>
+        // Detectar cuando el video termina
+        const video = document.getElementById('graduation_video');
+        video.addEventListener('ended', () => {
+            // Desactiva autoplay después de la primera reproducción
+            video.autoplay = false;
+            video.muted = false; // Opcional: activa el sonido después de la primera reproducción
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+        const options = {
+            root: null, // Ventana del navegador
+            threshold: 0.1 // Activar cuando al menos el 10% del elemento sea visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible"); // Agrega la clase visible
+                    observer.unobserve(entry.target); // Deja de observar el elemento
+                }
+            });
+        }, options);
+
+        // Selecciona todos los elementos que tengan la clase `animate-on-scroll`
+        const animatedElements = document.querySelectorAll(".animate-on-scroll");
+
+        // Observa cada elemento
+        animatedElements.forEach(el => observer.observe(el));
+    });
+
+    </script>
+</body>
+</html>

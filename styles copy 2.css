@@ -1,0 +1,85 @@
+
+
+@media (min-width: 1024px) {
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Ajusta las proporciones de las columnas */
+    grid-template-rows: 1fr 3fr;
+    row-gap: 40px;
+    padding: 0; /* Elimina padding interno */
+    column-gap: 20px; /* Reduce el espacio entre columnas */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: center; /* Centra el grid en la página */
+    align-content: center; /* Centra el contenido del grid verticalmente */
+    background-color: #f6f6f6;
+  }
+
+  .section-title {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    align-self: center; /* Centra verticalmente en la fila */
+    justify-self: center; /* Centra horizontalmente en la columna */
+    margin: 0; /* Elimina márgenes extra */
+  }
+
+  .section-title h2 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0;
+    align-self: center; /* Centra verticalmente */
+  }
+
+  .skills-list1 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    margin-left: 30px; 
+    color: #555;
+    text-align: left;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea verticalmente hacia la parte superior */
+    align-items: center; /* Alinea horizontalmente a la izquierda */
+  }
+
+
+  .icons {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Centra verticalmente */
+    /* gap: 20px;
+    justify-items: center; */
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .img_icon {
+    object-fit: cover;
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 10px; /* Mantén los bordes redondeados */
+  }
+
+  .skills-list2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    color: #555;
+    text-align: left;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    height: 100%; /* Asegura que ocupen todo el espacio vertical del cuadrante */
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: flex-start; /* Alinea verticalmente hacia la parte superior del cuadrante */
+    align-items: center; 
+  }
+    
+}
