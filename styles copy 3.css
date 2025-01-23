@@ -155,12 +155,15 @@ body {
   .coding-image {
     grid-row: 1 / 4;
     grid-column: 3 / 4;
-    justify-self: center; /* Centra horizontalmente la imagen */
+    justify-self: stretch; /* Centra horizontalmente la imagen */
+    align-self: stretch; /* Centra verticalmente la imagen */
+    display: flex; /* Permite ajustar el contenido */
   }
 
   .coding-picture {
-    max-width: 300px; /* Reduce el tamaño máximo de la imagen */
-    max-height: 300px;
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que ocupe toda la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen se recorte para llenar el espacio */
   }
 }
 
