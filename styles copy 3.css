@@ -128,8 +128,9 @@ body {
     display: flex; /* Utiliza flexbox para alinear elementos */
     align-items: flex-start; /* Centra verticalmente */
     justify-content: flex-start; /* Alinea horizontalmente */
-    gap: 20rem; /* Espaciado entre subtítulo y enlace */
+    gap: 45%; /* Espaciado entre subtítulo y enlace */
     padding-left: 70px; /* Ajusta según el diseño deseado */
+    padding-right: 70px; /* Ajusta según el diseño deseado */
   }
   
   .subtitle {
