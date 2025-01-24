@@ -327,6 +327,85 @@ body {
   }
 }
 
+/* 480px o menos */
+@media (max-width: 480px) {
+  .first-page {
+    display: grid;
+    grid-template-columns: 2fr; /* Ajusta las proporciones de las columnas */
+    grid-template-rows: .5fr .5fr 0.5fr 2fr;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura del viewport */
+    background-color: #f6f6f6;
+  }
+  
+  .portfolio-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    color: #555;
+    letter-spacing: 2px;
+    align-self: flex-end; /* Centra verticalmente en la fila */
+    justify-self: center; /* Centra horizontalmente en la columna */
+  }
+
+  .name {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-self: center; /* Centra verticalmente en la fila */
+    justify-self: center; /* Centra horizontalmente en la columna */
+  }
+
+  .subtitle-container {
+    display: grid; /* Activamos CSS Grid */
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: auto auto; /* Dos filas automáticas */
+    gap: 0px; /* Espaciado vertical entre las filas */
+    justify-items: center; /* Alinea horizontalmente al inicio */
+    align-items: center; /* Alinea verticalmente al centro */
+    padding: 0;
+  }
+
+  .subtitle {
+    font-size: 0.8rem; /* Tamaño adecuado para texto */
+    color: #777;
+    margin: 0; /* Elimina márgenes adicionales */
+  }
+
+  .contact-link {
+    font-size: 0.8rem; /* Tamaño adecuado para el enlace */
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    border-bottom: 2px solid #007BFF;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    margin: 0; /* Elimina márgenes adicionales */
+  }
+  
+  .contact-link:hover {
+    color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .coding-image {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    justify-self: stretch; /* Centra horizontalmente la imagen */
+    align-self: stretch; /* Centra verticalmente la imagen */
+    display: flex; /* Permite ajustar el contenido */
+  }
+
+  .coding-picture {
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que ocupe toda la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen se recorte para llenar el espacio */
+  }
+}
+
 /*Segunda hoja*/
 .second-page {
   display: grid;
