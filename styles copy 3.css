@@ -407,161 +407,150 @@ body {
 }
 
 /*Segunda hoja*/
-.second-page {
-  display: grid;
-  grid-template-columns: auto 3fr;
-  grid-template-rows: 1.2 2fr;
-  row-gap: 40px;
-  padding: 60px 60px;
-  column-gap: 80px;
-  height: 100vh; /* Ajustar al tamaño de la ventana */
-  box-sizing: border-box; /* Incluye el padding dentro de la altura */
-  justify-content: start; /* Asegura que el contenido inicie en la parte superior */
-  align-content: center; /* Centra todo el contenido */
+/*RESPONSIVE PAG 2*/
+/*1024px o más*/
+@media (min-width: 1024px) {
+  .second-page {
+    display: grid;
+    grid-template-columns: auto 3fr;
+    grid-template-rows: 1.2 2fr;
+    row-gap: 40px;
+    padding: 60px 60px;
+    column-gap: 80px;
+    height: 100vh; /* Ajustar al tamaño de la ventana */
+    box-sizing: border-box; /* Incluye el padding dentro de la altura */
+    justify-content: start; /* Asegura que el contenido inicie en la parte superior */
+    align-content: center; /* Centra todo el contenido */
+  }
+  
+  .bio-header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Asegura que el contenido esté en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+  }
+  
+  .bio-sub-header {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    align-self: center; 
+  }
+  
+  .bio-sub-header .highlight {
+    grid-area: bio-highlight; /* Asigna al área 'bio-highlight' */
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #fdf4e6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0;
+    white-space: nowrap; /* Evita que pase a otra línea */
+  }
+  
+  .bio-image {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    align-self: center; /* Alinea verticalmente la imagen */
+  }
+  
+  .bio-text {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    font-size: 1.18rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    align-self: center; /* Centra verticalmente el texto en su cuadrante */
+  }
+  
+  .profile-picture {
+    object-fit: cover;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 10px; /* Mantén los bordes redondeados */
+  }
+  
+  .bio-header h2 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+    align-self: center; /* Centra verticalmente */
+  }
 }
 
-.bio-header {
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
-  display: flex; /* Activa Flexbox */
-  flex-direction: column; /* Asegura que el contenido esté en columna */
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
-}
-
-.bio-sub-header {
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
-  align-self: center; 
-}
-
-.bio-sub-header .highlight {
-  grid-area: bio-highlight; /* Asigna al área 'bio-highlight' */
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #333;
-  background-color: #fdf4e6;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin: 0;
-  white-space: nowrap; /* Evita que pase a otra línea */
-}
-
-.bio-image {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  align-self: center; /* Alinea verticalmente la imagen */
-}
-
-.bio-text {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-  font-size: 1.18rem;
-  color: #555;
-  line-height: 1.6;
-  text-align: justify;
-  align-self: center; /* Centra verticalmente el texto en su cuadrante */
-}
-
-.profile-picture {
-  object-fit: cover;
-  max-width: 250px;
-  max-height: 250px;
-  border-radius: 10px; /* Mantén los bordes redondeados */
-}
-
-.bio-header h2 {
-  font-size: 2rem;
-  color: #333;
-  margin: 0;
-  text-transform: uppercase;
-  align-self: center; /* Centra verticalmente */
-}
-
-/*Responsive page 2*/
-/* Ajustes para tablets y pantallas medianas (1024px o menos) */
 @media (max-width: 1024px) {
   .second-page {
-      grid-template-columns: 1fr; /* Cambia a una sola columna */
-      grid-template-rows: auto; /* Ajusta las filas automáticamente */
-      row-gap: 20px; /* Reduce el espacio entre filas */
-      padding: 40px 20px; /* Reduce el padding */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 3fr;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 100vh; /* Ajustar al tamaño de la ventana */
+    box-sizing: border-box; /* Incluye el padding dentro de la altura */
+    justify-content: start; /* Asegura que el contenido inicie en la parte superior */
+    align-content: center; /* Centra todo el contenido */
   }
-
+  
   .bio-header {
-      grid-row: 1 / 2;
-      grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
   }
-
+  
   .bio-sub-header {
-      grid-row: 2 / 3;
-      grid-column: 1 / 2;
-      text-align: center; /* Centra el texto */
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    align-self: center; 
   }
-
+  
+  .bio-sub-header .highlight {
+    grid-area: bio-highlight; /* Asigna al área 'bio-highlight' */
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #fdf4e6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0;
+    white-space: nowrap; /* Evita que pase a otra línea */
+  }
+  
   .bio-image {
-      grid-row: 3 / 4;
-      grid-column: 1 / 2;
-      justify-self: center; /* Centra horizontalmente la imagen */
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    align-self: center; /* Alinea verticalmente la imagen */
+    justify-self: center; /* Centra verticalmente */
   }
-
+  
   .bio-text {
-      grid-row: 4 / 5;
-      grid-column: 1 / 2;
-      font-size: 1rem; /* Reduce el tamaño del texto */
-      padding: 0 10px; /* Añade un poco de espacio lateral */
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    align-self: center; /* Centra verticalmente el texto en su cuadrante */
   }
-
+  
   .profile-picture {
-      max-width: 200px; /* Reduce el tamaño máximo de la imagen */
-      max-height: 200px;
+    object-fit: cover;
+    max-width: 190px;
+    max-height: 190px;
+    border-radius: 10px; /* Mantén los bordes redondeados */
   }
-}
-
-/* Ajustes para móviles (768px o menos) */
-@media (max-width: 768px) {
+  
   .bio-header h2 {
-      font-size: 1.5rem; /* Reduce el tamaño del título */
-  }
-
-  .bio-sub-header .highlight {
-      font-size: 1.2rem; /* Ajusta el tamaño del texto resaltado */
-  }
-
-  .bio-text {
-      font-size: 0.95rem; /* Reduce aún más el tamaño del texto */
-      line-height: 1.5; /* Ajusta el interlineado */
-  }
-
-  .profile-picture {
-      max-width: 150px; /* Imagen más pequeña */
-      max-height: 150px;
-  }
-}
-
-/* Ajustes para pantallas muy pequeñas (480px o menos) */
-@media (max-width: 480px) {
-  .second-page {
-      padding: 20px 10px; /* Reduce el padding */
-      row-gap: 10px; /* Menos espacio entre filas */
-  }
-
-  .bio-header h2 {
-      font-size: 1.2rem; /* Reduce aún más el tamaño del título */
-  }
-
-  .bio-sub-header .highlight {
-      font-size: 1rem; /* Ajusta el tamaño del texto resaltado */
-  }
-
-  .bio-text {
-      font-size: 0.85rem; /* Texto más pequeño para pantallas pequeñas */
-      text-align: justify; /* Mantiene el texto justificado */
-  }
-
-  .profile-picture {
-      max-width: 120px; /* Imagen más pequeña */
-      max-height: 120px;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    text-transform: uppercase;
+    align-self: center; /* Centra verticalmente */
   }
 }
 
