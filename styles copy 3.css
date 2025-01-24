@@ -282,35 +282,29 @@ body {
   }
 
   .subtitle-container {
-    grid-row: 3 / 5;
-    grid-column: 1 / 2;
-    display: block; /* Cambiamos a bloque para gestionar los hijos con CSS */
+    display: grid; /* Activamos CSS Grid */
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: auto auto; /* Dos filas automáticas */
+    gap: 0px; /* Espaciado vertical entre las filas */
+    justify-items: center; /* Alinea horizontalmente al inicio */
+    align-items: center; /* Alinea verticalmente al centro */
     padding: 0;
   }
-  
+
   .subtitle {
-    grid-row: 3 / 4; /* Fila 3 */
-    grid-column: 1 / 2; /* Columna 1 */
-    font-size: 0.8rem;
+    font-size: 0.9rem; /* Tamaño adecuado para texto */
     color: #777;
-    margin: 0;
-    padding-left: 20px; /* Ajusta el espaciado si es necesario */
-    align-self: start; /* Asegura que comience en la fila correcta */
-    justify-self: start; /* Alinea al inicio horizontalmente */
+    margin: 0; /* Elimina márgenes adicionales */
   }
 
   .contact-link {
-    grid-row: 4 / 5; /* Fila 4 */
-    grid-column: 1 / 2; /* Columna 1 */
-    font-size: 0.8rem;
+    font-size: 0.9rem; /* Tamaño adecuado para el enlace */
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
     border-bottom: 2px solid #007BFF;
-    margin: 10px 0 0 20px; /* Ajusta el margen superior para separar del subtítulo */
-    align-self: start; /* Asegura que comience en la fila correcta */
-    justify-self: start; /* Alinea al inicio horizontalmente */
     transition: color 0.3s ease, border-color 0.3s ease;
+    margin: 0; /* Elimina márgenes adicionales */
   }
   
   .contact-link:hover {
