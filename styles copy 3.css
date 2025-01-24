@@ -128,8 +128,8 @@ body {
     grid-column: 1 / 2; /* Abarca las columnas necesarias */
     display: flex; /* Utiliza flexbox para alinear elementos */
     align-items: flex-start; /* Centra verticalmente */
-    justify-content: flex-start; /* Alinea horizontalmente */
-    gap: 45%; /* Espaciado entre subtítulo y enlace */
+    justify-content: center; /* Alinea horizontalmente */
+    gap: 20%; /* Espaciado entre subtítulo y enlace */
     padding-left: 70px; /* Ajusta según el diseño deseado */
     padding-right: 70px; /* Ajusta según el diseño deseado */
   }
@@ -207,15 +207,15 @@ body {
     grid-column: 1 / 2; /* Abarca las columnas necesarias */
     display: flex; /* Utiliza flexbox para alinear elementos */
     align-items: flex-start; /* Centra verticalmente */
-    justify-content: flex-start; /* Alinea horizontalmente */
-    gap: 45%; /* Espaciado entre subtítulo y enlace */
+    justify-content: center; /* Alinea horizontalmente */
+    gap: 5%; /* Espaciado entre subtítulo y enlace */
     padding-left: 70px; /* Ajusta según el diseño deseado */
     padding-right: 70px; /* Ajusta según el diseño deseado */
   }
   
   .subtitle {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #777;
   }
   
@@ -223,7 +223,7 @@ body {
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-bottom: 2px solid #007BFF;
     transition: color 0.3s ease, border-color 0.3s ease;
   }
@@ -283,27 +283,33 @@ body {
 
   .subtitle-container {
     grid-row: 3 / 5;
-    grid-column: 1 / 2; /* Abarca las columnas necesarias */
-    display: flex; /* Utiliza flexbox para alinear elementos */
-    align-items: flex-start; /* Centra verticalmente */
-    justify-content: flex-start; /* Alinea horizontalmente */
-    gap: 45%; /* Espaciado entre subtítulo y enlace */
-    padding-left: 70px; /* Ajusta según el diseño deseado */
-    padding-right: 70px; /* Ajusta según el diseño deseado */
+    grid-column: 1 / 2;
+    display: block; /* Cambiamos a bloque para gestionar los hijos con CSS */
+    padding: 0;
   }
   
   .subtitle {
-    margin: 0;
+    grid-row: 3 / 4; /* Fila 3 */
+    grid-column: 1 / 2; /* Columna 1 */
     font-size: 0.8rem;
     color: #777;
+    margin: 0;
+    padding-left: 20px; /* Ajusta el espaciado si es necesario */
+    align-self: start; /* Asegura que comience en la fila correcta */
+    justify-self: start; /* Alinea al inicio horizontalmente */
   }
-  
+
   .contact-link {
+    grid-row: 4 / 5; /* Fila 4 */
+    grid-column: 1 / 2; /* Columna 1 */
+    font-size: 0.8rem;
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
-    font-size: 0.8rem;
     border-bottom: 2px solid #007BFF;
+    margin: 10px 0 0 20px; /* Ajusta el margen superior para separar del subtítulo */
+    align-self: start; /* Asegura que comience en la fila correcta */
+    justify-self: start; /* Alinea al inicio horizontalmente */
     transition: color 0.3s ease, border-color 0.3s ease;
   }
   
